@@ -1,0 +1,28 @@
+{
+  "name": "cse341-lesson1",
+  "version": "1.0.0",
+  "description": "Lesson 1",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyeguy00/cse341-lesson1.git"
+  },
+  "author": "Kyle Southwick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kyeguy00/cse341-lesson1.git"
+  },
+  "homepage": "https://github.com/kyeguy00/cse341-lesson1.git",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.17.3",
+    "mongodb": "^4.13.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
