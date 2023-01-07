@@ -10,3 +10,14 @@ GET http://localhost:8080/contacts/63b8abb737e2e74a6ad7e9e4
 ### 
 GET http://localhost:8080/contacts/63b8abb737e2e74a6ad7e9e5
 
+// PRODUCTION
+###
+GET https://cse341-lesson2-o4im.onrender.com/contacts 
+###
+GET http://cse341-lesson2-o4im.onrender.com/contacts/63b8abb737e2e74a6ad7e9e3
+
+### 
+GET http://cse341-lesson2-o4im.onrender.com/contacts/63b8abb737e2e74a6ad7e9e4
+
+### 
+GET http://cse341-lesson2-o4im.onrender.com/contacts/63b8abb737e2e74a6ad7e9e5
