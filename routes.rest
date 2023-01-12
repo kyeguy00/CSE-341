@@ -23,13 +23,13 @@ content-type: application/json
 {
     "firstName":"Merry",
     "lastName":"Southwick",
-    "email":"merryemail2@test.com",
+    "email":"merryemail1234@test.com",
     "favoriteColor":"Maroon",
     "birthday":"12/14/1998"
 }
 
 ### 
-DELETE http://localhost:8080/contacts/63bcc258ff1df078ad98c992 HTTP/1.1
+DELETE http://localhost:8080/contacts/63bcd46ee248c37dbc2c82c2 HTTP/1.1
 
 ### 
 GET http://localhost:8080/contacts/63b8abb737e2e74a6ad7e9e4
@@ -60,13 +60,13 @@ content-type: application/json
 {
     "firstName":"Merry",
     "lastName":"Southwick",
-    "email":"merryemail3@test.com",
+    "email":"merryemail5@test.com",
     "favoriteColor":"Maroon",
     "birthday":"12/14/1998"
 }
 
 ###
-DELETE http://cse341-lesson3-vvvz.onrender.com/contacts/63bcc258ff1df078ad98c992 HTTP/1.1
+DELETE http://cse341-lesson3-vvvz.onrender.com/contacts/63bcd94fa881186de51aa443 HTTP/1.1
 
 ###
 GET http://cse341-lesson3-vvvz.onrender.com/contacts/63b8abb737e2e74a6ad7e9e3
