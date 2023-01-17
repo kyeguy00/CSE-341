@@ -1,0 +1,29 @@
+{
+  "player": {
+    "firstName": "LeBron",
+    "lastName": "James",
+    "position": "SF",
+    "team": "Lakers",
+    "birthday": "12/30/1984",
+    "college": "N/A",
+    "championships": "4"
+  },
+  "player2": {
+    "firstName": "Stephen",
+    "lastName": "Curry",
+    "position": "PG",
+    "team": "Warriors",
+    "birthday": "03/14/1988",
+    "college": "Davidson",
+    "championships": "4"
+  },
+  "player3": {
+    "firstName": "Luka",
+    "lastName": "Doncic",
+    "position": "PG/SG",
+    "team": "Mavericks",
+    "birthday": "2/28/1999",
+    "college": "Osnovna sola Mirana Jarca",
+    "championships": "0"
+  }
+}
