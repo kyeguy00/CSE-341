@@ -25,7 +25,7 @@ content-type: application/json
 }
 
 ###
-PUT http://localhost:8080/players/63c60f1f4f1dc307ce12f0ff HTTP/1.1
+PUT http://localhost:8080/players/63c61e63d26805ff7fb7359c HTTP/1.1
 content-type: application/json
 
 {
