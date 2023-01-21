@@ -20,11 +20,12 @@ content-type: application/json
   "position":"PF/SF", 
   "team":"Nets", 
   "birthday":"09/29/1988",
-  "college":"Texas"
+  "college":"Texas",
+  "championships": "2"
 }
 
 ###
-PUT http://localhost:8080/players/63c6223da0d5acf6bd6ff8f3 HTTP/1.1
+PUT http://localhost:8080/players/63c62263cc63d695f5d3fcb11abd993da0d5acf6bd6ff8f3 HTTP/1.1
 content-type: application/json
 
 {
@@ -34,11 +35,11 @@ content-type: application/json
     "team":"Changes often",
     "birthday":"12/14/1998",
     "college":"Texas",
-    "championships":"2"
+    "championships": "2"
 }
 
 ### 
-DELETE http://localhost:8080/players/63cc5fa637b7d32449744683 HTTP/1.1
+DELETE http://localhost:8080/players/ HTTP/1.1
 
 
 // PRODUCTION
