@@ -39,7 +39,7 @@ content-type: application/json
 }
 
 ### 
-DELETE http://localhost:8080/players/63cc5a78613e27dab0547587 HTTP/1.1
+DELETE http://localhost:8080/players/63cc5fa637b7d32449744683 HTTP/1.1
 
 
 // PRODUCTION

@@ -37,7 +37,8 @@ const createContact = async (req, res) => {
       !req.body?.college ||
       !req.body?.championships
     ) {
-      res.status(400).send;
+      res.status(400).json(response);
+      return;
     }
 
     const contact = {
