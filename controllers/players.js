@@ -27,28 +27,44 @@ const getSingle = async (req, res, next) => {
 };
 
 const createContact = async (req, res) => {
-  const contact = {
-    firstName: req.body.firstName,
-    lastName: req.body.lastName,
-    position: req.body.position,
-    team: req.body.team,
-    birthday: req.body.birthday,
-    college: req.body.college,
-    championships: req.body.championships,
-  };
-  const response = await mongodb
-    .getDb()
-    .db("nba_players")
-    .collection("players")
-    .insertOne(contact);
-  if (response.acknowledged) {
-    res.status(201).json(response);
-  } else {
-    res
-      .status(500)
-      .json(
-        response.error || "Some error occurred while creating the contact."
-      );
+  try {
+    if (
+      !req.body?.firstName ||
+      !req.body?.lastName ||
+      !req.body?.position ||
+      !req.body?.team ||
+      !req.body?.birthday ||
+      !req.body?.college ||
+      !req.body?.championships
+    ) {
+      res.status(400).send;
+    }
+
+    const contact = {
+      firstName: req.body.firstName,
+      lastName: req.body.lastName,
+      position: req.body.position,
+      team: req.body.team,
+      birthday: req.body.birthday,
+      college: req.body.college,
+      championships: req.body.championships,
+    };
+    const response = await mongodb
+      .getDb()
+      .db("nba_players")
+      .collection("players")
+      .insertOne(contact);
+    if (response.acknowledged) {
+      res.status(201).json(response);
+    } else {
+      res
+        .status(500)
+        .json(
+          response.error || "Some error occurred while creating the contact."
+        );
+    }
+  } catch (error) {
+    res.status(500).json(error);
   }
 };
 
@@ -62,7 +78,6 @@ const updateContact = async (req, res) => {
     birthday: req.body.birthday,
     college: req.body.college,
     championships: req.body.championships,
-
   };
   const response = await mongodb
     .getDb()

@@ -21,11 +21,11 @@ content-type: application/json
   "team":"Nets", 
   "birthday":"09/29/1988",
   "college":"Texas",
-  "championships":"2"
+  "championships": 2
 }
 
 ###
-PUT http://localhost:8080/players/63c61f9b303dba86c639e696 HTTP/1.1
+PUT http://localhost:8080/players/63c6223da0d5acf6bd6ff8f3 HTTP/1.1
 content-type: application/json
 
 {
@@ -39,7 +39,7 @@ content-type: application/json
 }
 
 ### 
-DELETE http://localhost:8080/players/63c61e63d26805ff7fb7359c HTTP/1.1
+DELETE http://localhost:8080/players/63cc5a78613e27dab0547587 HTTP/1.1
 
 
 // PRODUCTION
