@@ -21,10 +21,10 @@ const getSingle = async (req, res, next) => {
     .db("nba_players")
     .collection("players")
     .find({ _id: userId });
-  if (result.toArray().length == 0) {
-    res.status(404).send("Not Found");
-    return;
-  }
+  // if (result.toArray().length == 0) {
+  //   res.status(404).send("Not Found");
+  //   return;
+  // }
   result.toArray().then((lists) => {
     res.setHeader("Content-Type", "application/json");
     res.status(200).json(lists[0]);
