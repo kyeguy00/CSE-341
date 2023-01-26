@@ -34,25 +34,25 @@
               "type": "object",
               "properties": {
                 "firstName": {
-                  "example": "any"
+                  "example": "Michael"
                 },
                 "lastName": {
-                  "example": "any"
+                  "example": "Jordan"
                 },
                 "position": {
-                  "example": "any"
+                  "example": "SG"
                 },
                 "team": {
-                  "example": "any"
+                  "example": "Bulls"
                 },
                 "birthday": {
-                  "example": "any"
+                  "example": "02/17/1963"
                 },
                 "college": {
-                  "example": "any"
+                  "example": "North Carolina"
                 },
                 "championships": {
-                  "example": "any"
+                  "example": "6"
                 }
               }
             }
@@ -104,25 +104,25 @@
               "type": "object",
               "properties": {
                 "firstName": {
-                  "example": "any"
+                  "example": "Michael"
                 },
                 "lastName": {
-                  "example": "any"
+                  "example": "Jordan"
                 },
                 "position": {
-                  "example": "any"
+                  "example": "SG"
                 },
                 "team": {
-                  "example": "any"
+                  "example": "Bulls"
                 },
                 "birthday": {
-                  "example": "any"
+                  "example": "02/17/1963"
                 },
                 "college": {
-                  "example": "any"
+                  "example": "North Carolina"
                 },
                 "championships": {
-                  "example": "any"
+                  "example": "6"
                 }
               }
             }
