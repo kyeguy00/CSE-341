@@ -1,16 +1,23 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Lesson 5-6 API",
-    "description": "Lesson 5-6 API",
+    "title": "Team project",
+    "description": "Team project",
     "version": "1.0.0"
   },
-  "host": "cse341-lesson5-6.onrender.com",
+  "host": "team-project.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
   ],
   "paths": {
+    "/api-docs": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
     "/players/": {
       "get": {
         "description": "",
@@ -34,25 +41,25 @@
               "type": "object",
               "properties": {
                 "firstName": {
-                  "example": "Michael"
+                  "example": "any"
                 },
                 "lastName": {
-                  "example": "Jordan"
+                  "example": "any"
                 },
                 "position": {
-                  "example": "SG"
+                  "example": "any"
                 },
                 "team": {
-                  "example": "Bulls"
+                  "example": "any"
                 },
                 "birthday": {
-                  "example": "02/17/1963"
+                  "example": "any"
                 },
                 "college": {
-                  "example": "North Carolina"
+                  "example": "any"
                 },
                 "championships": {
-                  "example": "6"
+                  "example": "any"
                 }
               }
             }
@@ -61,6 +68,9 @@
         "responses": {
           "201": {
             "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
           },
           "500": {
             "description": "Internal Server Error"
@@ -104,25 +114,25 @@
               "type": "object",
               "properties": {
                 "firstName": {
-                  "example": "Michael"
+                  "example": "any"
                 },
                 "lastName": {
-                  "example": "Jordan"
+                  "example": "any"
                 },
                 "position": {
-                  "example": "SG"
+                  "example": "any"
                 },
                 "team": {
-                  "example": "Bulls"
+                  "example": "any"
                 },
                 "birthday": {
-                  "example": "02/17/1963"
+                  "example": "any"
                 },
                 "college": {
-                  "example": "North Carolina"
+                  "example": "any"
                 },
                 "championships": {
-                  "example": "6"
+                  "example": "any"
                 }
               }
             }
@@ -131,6 +141,9 @@
         "responses": {
           "204": {
             "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
           },
           "500": {
             "description": "Internal Server Error"
@@ -148,11 +161,42 @@
           }
         ],
         "responses": {
-          "204": {
-            "description": "No Content"
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
           },
           "500": {
             "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/teams/": {
+      "get": {
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/arenas/": {
+      "get": {
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
