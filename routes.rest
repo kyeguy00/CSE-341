@@ -13,17 +13,13 @@ GET http://localhost:8080/arenas
 GET http://localhost:8080/positions
 
 ### 
-GET http://localhost:8080/players/63c60de3dbb283cf7e4f7091
+GET http://localhost:8080/players/63db0e08134cdf957f64344c
 
 ### 
-GET http://localhost:8080/players/63c60de3dbb283cf7e4f7092
+GET http://localhost:8080/players/63db0e08134cdf957f64344d
 
 ### 
-GET http://localhost:8080/players/63c60de3dbb283cf7e4f7093
-
-
-### 
-GET http://localhost:8080/players/63cf5dfaea69c83250491eea
+GET http://localhost:8080/players/63db0e08134cdf957f64344e
 
 ###
 POST http://localhost:8080/players HTTP/1.1
@@ -33,10 +29,10 @@ content-type: application/json
   "firstName":"Kevin", 
   "lastName":"Durant", 
   "position":"PF/SF", 
-  "team":"Nets", 
-  "birthday":"09/29/1988",
-  "college":"Texas",
-  "championships": "2"
+  "mpg":"27", 
+  "ppg":"27",
+  "apg":"7",
+  "rpg": "7"
 }
 
 ###
@@ -44,13 +40,13 @@ PUT http://localhost:8080/players/63c62263cc63d695f5d3fcb11abd993da0d5acf6bd6ff8
 content-type: application/json
 
 {
-    "firstName":"Kevin",
-    "lastName":"Durant",
-    "position":"PF/SF",
-    "team":"Changes often",
-    "birthday":"12/14/1998",
-    "college":"Texas",
-    "championships": "2"
+  "firstName":"Kevin", 
+  "lastName":"Durant", 
+  "position":"PF/SF", 
+  "mpg":"28", 
+  "ppg":"27",
+  "apg":"8",
+  "rpg": "7"
 }
 
 ### 
@@ -62,42 +58,42 @@ DELETE http://localhost:8080/players/63d1e73d13a91b16751cb735 HTTP/1.1
 GET https://cse341-lesson5-6.onrender.com/players/
 
 ###
-POST https://cse341-lesson5-6.onrender.com/players/ HTTP/1.1
+POST https://team-project.onrender.com/players/ HTTP/1.1
 content-type: application/json
 
 {
   "firstName":"Kevin", 
   "lastName":"Durant", 
   "position":"PF/SF", 
-  "team":"Nets", 
-  "birthday":"09/29/1988",
-  "college":"Texas",
-  "championships":"2"
+  "mpg":"27", 
+  "ppg":"27",
+  "apg":"7",
+  "rpg": "7"
 }
 
 ###
-PUT https://cse341-lesson5-6.onrender.com/players/63c613ddacf6f4e3e34471ae HTTP/1.1
+PUT https://team-project.onrender.com/players/63c613ddacf6f4e3e34471ae HTTP/1.1
 content-type: application/json
 
 {
-    "firstName":"Kevin",
-    "lastName":"Durant",
-    "position":"PF/SF",
-    "team":"Changes often",
-    "birthday":"12/14/1998",
-    "collge":"Texas",
-    "championships":"2"
+  "firstName":"Kevin", 
+  "lastName":"Durant", 
+  "position":"PF/SF", 
+  "mpg":"28", 
+  "ppg":"27",
+  "apg":"8",
+  "rpg": "7"
 }
 
 ###
-DELETE https://cse341-lesson5-6.onrender.com/players/63c613ddacf6f4e3e34471ae HTTP/1.1
+DELETE https://team-project.onrender.com/players/63c613ddacf6f4e3e34471ae HTTP/1.1
 
 ### 
-GET https://cse341-lesson5-6.onrender.com/players/63c60de3dbb283cf7e4f7091
+GET https://team-project.onrender.com/players/63c60de3dbb283cf7e4f7091
 
 ###
-GET https://cse341-lesson5-6.onrender.com/players/63c60de3dbb283cf7e4f7092
+GET https://team-project.onrender.com/players/63c60de3dbb283cf7e4f7092
 
 ### 
-GET https://cse341-lesson5-6.onrender.com/players/63c60de3dbb283cf7e4f7093
+GET https://team-project.onrender.com/players/63c60de3dbb283cf7e4f7093
 

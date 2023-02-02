@@ -49,16 +49,16 @@
                 "position": {
                   "example": "any"
                 },
-                "team": {
+                "mpg": {
                   "example": "any"
                 },
-                "birthday": {
+                "ppg": {
                   "example": "any"
                 },
-                "college": {
+                "apg": {
                   "example": "any"
                 },
-                "championships": {
+                "rpg": {
                   "example": "any"
                 }
               }
@@ -122,16 +122,16 @@
                 "position": {
                   "example": "any"
                 },
-                "team": {
+                "mpg": {
                   "example": "any"
                 },
-                "birthday": {
+                "ppg": {
                   "example": "any"
                 },
-                "college": {
+                "apg": {
                   "example": "any"
                 },
-                "championships": {
+                "rpg": {
                   "example": "any"
                 }
               }
@@ -188,6 +188,20 @@
       }
     },
     "/arenas/": {
+      "get": {
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/positions/": {
       "get": {
         "description": "",
         "produces": [

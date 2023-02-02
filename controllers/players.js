@@ -36,10 +36,10 @@ const createContact = async (req, res) => {
       !req.body?.firstName ||
       !req.body?.lastName ||
       !req.body?.position ||
-      !req.body?.team ||
-      !req.body?.birthday ||
-      !req.body?.college ||
-      !req.body?.championships
+      !req.body?.mpg ||
+      !req.body?.ppg ||
+      !req.body?.apg ||
+      !req.body?.rpg
     ) {
       console.log("Invalid");
       res.status(400).send("Bad request");
@@ -50,10 +50,10 @@ const createContact = async (req, res) => {
       firstName: req.body.firstName,
       lastName: req.body.lastName,
       position: req.body.position,
-      team: req.body.team,
-      birthday: req.body.birthday,
-      college: req.body.college,
-      championships: req.body.championships,
+      mpg: req.body.mpg,
+      ppg: req.body.ppg,
+      apg: req.body.apg,
+      rpg: req.body.rpg,
     };
     const response = await mongodb
       .getDb()
@@ -80,10 +80,10 @@ const updateContact = async (req, res) => {
       !req.body?.firstName ||
       !req.body?.lastName ||
       !req.body?.position ||
-      !req.body?.team ||
-      !req.body?.birthday ||
-      !req.body?.college ||
-      !req.body?.championships
+      !req.body?.mpg ||
+      !req.body?.ppg ||
+      !req.body?.apg ||
+      !req.body?.rpg
     ) {
       console.log("Invalid");
       res.status(400).send("Bad request");
@@ -94,10 +94,10 @@ const updateContact = async (req, res) => {
       firstName: req.body.firstName,
       lastName: req.body.lastName,
       position: req.body.position,
-      team: req.body.team,
-      birthday: req.body.birthday,
-      college: req.body.college,
-      championships: req.body.championships,
+      mpg: req.body.mpg,
+      ppg: req.body.ppg,
+      apg: req.body.apg,
+      rpg: req.body.rpg,
     };
     const response = await mongodb
       .getDb()
