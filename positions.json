@@ -1,17 +1,17 @@
 {
-  "position": {
+  "position1": {
       "positionName": "Point Guard"
   },
-  "position": {
+  "position2": {
     "positionName": "Shooting Guard"
   },
-  "position": {
+  "position3": {
     "positionName": "Small Forward"
   },
-  "position": {
+  "position4": {
     "positionName": "Power Forward"
   },
-  "position": {
+  "position5": {
     "positionName": "Center"
   }
 
