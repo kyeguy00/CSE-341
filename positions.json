@@ -1,0 +1,18 @@
+{
+  "position": {
+      "positionName": "Point Guard"
+  },
+  "position": {
+    "positionName": "Shooting Guard"
+  },
+  "position": {
+    "positionName": "Small Forward"
+  },
+  "position": {
+    "positionName": "Power Forward"
+  },
+  "position": {
+    "positionName": "Center"
+  }
+
+}
