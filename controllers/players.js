@@ -1,7 +1,6 @@
 const mongodb = require("../db/connect");
 const ObjectId = require("mongodb").ObjectId;
 
-
 const getAll = async (req, res, next) => {
   const result = await mongodb
     .getDb()
@@ -21,7 +20,7 @@ const getSingle = async (req, res, next) => {
     .db("nba_players")
     .collection("players")
     .find({ _id: userId });
-  // if (result.toArray().length == 0) {
+  // if (result.toArray().length === 0) {
   //   res.status(404).send("Not Found");
   //   return;
   // }
