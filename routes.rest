@@ -9,6 +9,10 @@ GET http://localhost:8080/teams
 GET http://localhost:8080/arenas
 
 ### 
+
+GET http://localhost:8080/positions
+
+### 
 GET http://localhost:8080/players/63c60de3dbb283cf7e4f7091
 
 ### 
