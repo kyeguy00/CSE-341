@@ -1,0 +1,19 @@
+{
+    "arenas": {
+      "arenaName": "TD Garden",
+      "arenaCity": "Boston, Massachusetts",
+      "arenaTeam": "Boston Celtics"
+      
+    },
+    "arenas2": {
+      "arenaName": "Crypto.com Arena",
+      "arenaCity": "Los Angeles, California",
+      "arenaTeam": "Los Angeles Lakers"
+    },
+    "arenas3": {
+      "arenaName": "Rocket Mortgage FieldHouse",
+      "arenaCity": "Cleveland, Ohio",
+      "arenaTeam": "Cleveland Cavaliers"
+    }
+  }
+  
