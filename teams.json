@@ -1,0 +1,17 @@
+{
+    "team": {
+        "teamName": "Los Angeles Lakers",
+        "cityName": "Los Angeles",
+        "stateName": "California"
+    },
+    "team2": {
+        "teamName": "Boston Celtics",
+        "cityName": "Boston",
+        "stateName": "Massachusetts"
+    },
+    "team3": {
+      "teamName": "Cleveland Cavaliers",
+      "cityName": "Cleveland",
+      "stateName": "Ohio"
+    }
+  }
