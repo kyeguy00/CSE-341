@@ -20,7 +20,8 @@
     },
     "/players/": {
       "get": {
-        "description": "",
+        "description": "Get all players",
+        "tags": "Players",
         "produces": [
           "application/json"
         ],
@@ -32,7 +33,7 @@
         }
       },
       "post": {
-        "description": "",
+        "description": "Edit player by id",
         "parameters": [
           {
             "name": "body",
