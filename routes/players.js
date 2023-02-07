@@ -6,6 +6,7 @@ const playersController = require('../controllers/players');
 
 router.get('/', playersController.getAll);
 
+
 router.get('/:id', playersController.getSingle);
 
 router.post('/', requiresAuth(), playersController.createContact);

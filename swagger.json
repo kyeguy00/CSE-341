@@ -21,7 +21,6 @@
     "/players/": {
       "get": {
         "description": "Get all players",
-        "tags": "Players",
         "produces": [
           "application/json"
         ],
