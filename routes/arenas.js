@@ -1,17 +1,17 @@
 const express = require('express');
 const router = express.Router();
-// const { requiresAuth } = require('express-openid-connect');
+const { requiresAuth } = require('express-openid-connect');
 
 const arenasController = require('../controllers/arenas');
 
 router.get('/', arenasController.getAllArenas);
 
-// router.get('/:id', playersController.getSingle);
+router.get('/:id', arenasController.getSingleArena);
 
-// router.post('/', requiresAuth(), playersController.createContact);
+router.post('/', requiresAuth(), arenasController.createArena);
 
-// router.put('/:id', requiresAuth(), playersController.updateContact);
+router.put('/:id', requiresAuth(), arenasController.updateArena);
 
-// router.delete('/:id', requiresAuth(), playersController.deleteContact);
+router.delete('/:id', requiresAuth(), arenasController.deleteArena);
 
 module.exports = router;

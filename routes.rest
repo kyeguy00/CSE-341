@@ -1,4 +1,6 @@
 // LOCALHOST 
+
+// GET All
 ### 
 GET http://localhost:8080/players 
 
@@ -9,18 +11,22 @@ GET http://localhost:8080/teams
 GET http://localhost:8080/arenas
 
 ### 
-
 GET http://localhost:8080/positions
+
+// GET BY ID
+### 
+GET http://localhost:8080/arenas/63db1209134cdf957f643456
 
 ### 
 GET http://localhost:8080/players/63db0e08134cdf957f64344c
 
 ### 
-GET http://localhost:8080/players/63db0e08134cdf957f64344d
+GET http://localhost:8080/positions/63db13f9134cdf957f643463
 
 ### 
-GET http://localhost:8080/players/63db0e08134cdf957f64344e
+GET http://localhost:8080/teams/63db0ee1134cdf957f643450
 
+// POST
 ###
 POST http://localhost:8080/players HTTP/1.1
 content-type: application/json
@@ -36,6 +42,36 @@ content-type: application/json
 }
 
 ###
+POST http://localhost:8080/teams HTTP/1.1
+content-type: application/json
+
+{
+  "teamName":"Los Angeles Clippers", 
+  "cityName":"Los Angeles", 
+  "stateName":"California"
+}
+
+###
+POST http://localhost:8080/arenas HTTP/1.1
+content-type: application/json
+
+{
+  "arenaName":"Crypto.com", 
+  "arenaCity":"Los Angeles", 
+  "arenaTeam":"Los Angeles Clippers"
+}
+
+###
+POST http://localhost:8080/positions HTTP/1.1
+content-type: application/json
+
+{
+  "positionName":"New Position"
+}
+
+// EDIT BY ID
+
+###
 PUT http://localhost:8080/players/63c62263cc63d695f5d3fcb11abd993da0d5acf6bd6ff8f3 HTTP/1.1
 content-type: application/json
 
@@ -49,16 +85,45 @@ content-type: application/json
   "rpg": "7"
 }
 
+// DELETE BY ID
+
 ### 
 DELETE http://localhost:8080/players/63d1e73d13a91b16751cb735 HTTP/1.1
 
 
 // PRODUCTION
-###
-GET https://cse341-lesson5-6.onrender.com/players/
+
+// GET All
+### 
+GET http://team-project.onrender.com/players 
+
+### 
+GET http://team-project.onrender.com/teams
+
+### 
+GET http://team-project.onrender.com/arenas
+
+### 
+GET http://team-project.onrender.com/positions
+
+// GET BY ID
+
+### 
+GET http://team-project.onrender.com/arenas/63db1209134cdf957f643456
+
+### 
+GET http://team-project.onrender.com/players/63db0e08134cdf957f64344c
+
+### 
+GET http://team-project.onrender.com/positions/63db13f9134cdf957f643463
+
+### 
+GET http://team-project.onrender.com/teams/63db0ee1134cdf957f643450
+
+// POST
 
 ###
-POST https://team-project.onrender.com/players/ HTTP/1.1
+POST http://team-project.onrender.com/players HTTP/1.1
 content-type: application/json
 
 {
@@ -72,7 +137,37 @@ content-type: application/json
 }
 
 ###
-PUT https://team-project.onrender.com/players/63c613ddacf6f4e3e34471ae HTTP/1.1
+POST http://team-project.onrender.com/teams HTTP/1.1
+content-type: application/json
+
+{
+  "teamName":"Los Angeles Clippers", 
+  "cityName":"Los Angeles", 
+  "stateName":"California"
+}
+
+###
+POST http://team-project.onrender.com/arenas HTTP/1.1
+content-type: application/json
+
+{
+  "arenaName":"Crypto.com", 
+  "arenaCity":"Los Angeles", 
+  "arenaTeam":"Los Angeles Clippers"
+}
+
+###
+POST http://team-project.onrender.com/positions HTTP/1.1
+content-type: application/json
+
+{
+  "positionName":"New Position"
+}
+
+// EDIT BY ID
+
+###
+PUT http://team-project.onrender.com/players/63c62263cc63d695f5d3fcb11abd993da0d5acf6bd6ff8f3 HTTP/1.1
 content-type: application/json
 
 {
@@ -86,14 +181,9 @@ content-type: application/json
 }
 
 ###
-DELETE https://team-project.onrender.com/players/63c613ddacf6f4e3e34471ae HTTP/1.1
+PUT http://team-project.onrender.com/positions/63db13f9134cdf957f643462 HTTP/1.1
+content-type: application/json
 
-### 
-GET https://team-project.onrender.com/players/63c60de3dbb283cf7e4f7091
-
-###
-GET https://team-project.onrender.com/players/63c60de3dbb283cf7e4f7092
-
-### 
-GET https://team-project.onrender.com/players/63c60de3dbb283cf7e4f7093
-
+{
+  "positionName":"New Position 2"
+}
