@@ -29,7 +29,6 @@
   "devDependencies": {
     "nodemon": "^2.0.15",
     "swagger-autogen": "^2.22.0",
-    "jest": "29.4.2",
-    "@shelf/jest-mongodb": "4.1.6"
+    "jest": "29.4.2"
   }
 }
