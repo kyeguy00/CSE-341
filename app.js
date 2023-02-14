@@ -1,15 +1,13 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const mongodb = require('./db/connect');
-const { requiresAuth } = require('express-openid-connect');
-require('dotenv').config();
+const express = require("express");
+const bodyParser = require("body-parser");
+const mongodb = require("./db/connect");
+const { requiresAuth } = require("express-openid-connect");
+require("dotenv").config();
 
 const port = process.env.PORT || 8080;
 const app = express();
 
-
-
-const { auth } = require('express-openid-connect');
+const { auth } = require("express-openid-connect");
 
 const config = {
   authRequired: false,
@@ -17,30 +15,30 @@ const config = {
   secret: process.env.SECRET,
   baseURL: process.env.BASE_URL,
   clientID: process.env.CLIENT_ID,
-  issuerBaseURL: process.env.ISSUER_BASE_URL
+  issuerBaseURL: process.env.ISSUER_BASE_URL,
 };
 
 // auth router attaches /login, /logout, and /callback routes to the baseURL
 app.use(auth(config));
 
-
 // req.isAuthenticated is provided from the auth router
-app.get('/', (req, res) => {
-  res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
+app.get("/", (req, res) => {
+  res.send(req.oidc.isAuthenticated() ? "Logged in" : "Logged out");
 });
 
-app.get('/profile', requiresAuth(), (req, res)=> {
+app.get("/profile", requiresAuth(), (req, res) => {
   res.send(JSON.stringify(req.oidc.user));
-})
-
+});
 
 app
   .use(bodyParser.json())
   .use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader("Access-Control-Allow-Origin", "*");
     next();
   })
-  .use('/', require('./routes'));
+  .use("/", require("./routes"));
+
+//Code for production.
 
 mongodb.initDb((err, mongodb) => {
   if (err) {
@@ -50,3 +48,24 @@ mongodb.initDb((err, mongodb) => {
     console.log(`Connected to DB and listening on ${port}`);
   }
 });
+
+// Development Code for testing the endpoints
+
+// const mongodbConnect = new Promise((resolve, reject) => {
+//   mongodb.initDb((err, mongodb) => {
+//     if (err) {
+//       reject(err);
+//     } else {
+//       resolve(mongodb);
+//     }
+//   });
+// });
+
+// async function startApp() {
+//   await mongodbConnect;
+//   console.log("mongodb initialized");
+//   app.listen(port, () => {
+//     console.log(`app listening on port ${port}`);
+//   });
+// }
+// module.exports = { app, startApp };

@@ -1,5 +1,5 @@
 import React, { useEffect, useState} from 'react'
-export function Table() {
+export function Players() {
   const [backendData, setBackendData] = useState([{}])
   
   useEffect(() => {
@@ -10,7 +10,9 @@ export function Table() {
     }).then(jsonResponse => setBackendData(jsonResponse))
   },  [])
   return (
+    <div>
     <div className="tableWrapper">
+      <h2>Players</h2>
       <table>
         <tr>
           <th>First Name</th>
@@ -30,6 +32,7 @@ export function Table() {
             </tr>
           ))}
       </table>
+    </div>
     </div>
   );
 }
